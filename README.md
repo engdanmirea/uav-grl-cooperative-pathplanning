@@ -1,7 +1,7 @@
 # UAV Cooperative Obstacle Avoidance in Probabilistic Unknown Environment using Geometric Reinforcement Learning (GRL)
 
-This repository contains a MATLAB simulation of a **Geometric Reinforcement Learning (GRL)** approach to multi-UAV obstacle avoidance in probabilistic, unknown environments.
-It is based on the MEng research project conducted by Dan Paul Mirea at the University of Bristol.
+This repository contains the MATLAB implementation of my MEng research project in Aerospace Engineering at the University of Bristol:  
+**"Cooperative Obstacle Avoidance in Probabilistic Unknown Environment using Reinforcement Learning"**.
 
 ## 🧠 Overview
 
