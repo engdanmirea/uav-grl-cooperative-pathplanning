@@ -1,4 +1,4 @@
-# Cooperative UAV Obstacle Avoidance in Probabilistic Unknown Environment using Geometric Reinforcement Learning (GRL)
+# UAV Cooperative Obstacle Avoidance in Probabilistic Unknown Environment using Geometric Reinforcement Learning (GRL)
 
 This repository contains a MATLAB simulation of a **Geometric Reinforcement Learning (GRL)** approach to multi-UAV obstacle avoidance in probabilistic, unknown environments.
 It is based on the MEng research project conducted by Dan Paul Mirea at the University of Bristol.
@@ -24,6 +24,15 @@ The simulation generates a visual step-by-step trajectory of two UAVs navigating
   - Cooperative UAVs in complex maps (benchmark, bug trap, walls).
 - Modular MATLAB design for customization and experimentation.
 
+## 📽️ What the Simulation Does
+
+The MATLAB simulation animates the paths of two UAVs moving from defined starting points to a target location, avoiding unknown obstacles represented as probabilistic risk fields. The UAVs update their plans in real-time as new threats are detected within their observation radius.
+
+You can:
+- Observe individual vs cooperative UAV behavior.
+- Tune the risk aversion (`K`), learning episodes, and sensing range.
+- Run benchmark maps such as the "bug trap" and "collateral walls" to evaluate strategy robustness.
+
 ## 📁 Project Structure
 
 ```plaintext
@@ -37,3 +46,17 @@ The simulation generates a visual step-by-step trajectory of two UAVs navigating
 ├── enemyGauss.txt          # Threat field generator
 ├── nexstep.txt             # Local movement controller
 ├── DanMirea_RP4.pdf        # Full research paper with background, theory, and results
+```
+
+## Citation
+```
+@unpublished{mirea2020grl,
+  author       = {Dan Paul Mirea},
+  title        = {Cooperative Obstacle Avoidance in Probabilistic Unknown Environment using Reinforcement Learning},
+  institution  = {Department of Aerospace Engineering, University of Bristol},
+  year         = {2020},
+  note         = {MEng Individual Research Project},
+  url          = {https://github.com/engdanmirea/uav-grl-cooperative-pathplanning}
+}
+```
+
