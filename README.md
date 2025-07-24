@@ -3,18 +3,18 @@
 This repository contains the MATLAB implementation of my MEng research project in Aerospace Engineering at the University of Bristol:  
 **"Cooperative Obstacle Avoidance in Probabilistic Unknown Environment using Reinforcement Learning"**.
 
-## 🧠 Overview
+## Overview
 
 Traditional UAV path planning methods often assume prior knowledge of the environment. This project addresses the more realistic case where the environment is initially unknown and threats are probabilistically distributed. It employs a geometric reinforcement learning algorithm that:
 - Integrates both **distance** and **probabilistic risk** in path planning.
 - Allows **cooperation between multiple UAVs** by sharing threat information.
 - Supports real-time **dynamic re-planning** when new threats are discovered.
 
-## 📽️ Demo
+## Demo
 
 The simulation generates a visual step-by-step trajectory of two UAVs navigating toward a common target while avoiding probabilistic threats. Snapshots are saved in the `.\pic\` directory created per run.
 
-## 🗺️ Key Features
+## Key Features
 
 - Environment modelled using Gaussian threat fields.
 - Adaptive reward matrix based on distance and integrated risk.
@@ -24,7 +24,7 @@ The simulation generates a visual step-by-step trajectory of two UAVs navigating
   - Cooperative UAVs in complex maps (benchmark, bug trap, walls).
 - Modular MATLAB design for customization and experimentation.
 
-## 📽️ What the Simulation Does
+## What the Simulation Does
 
 The MATLAB simulation animates the paths of two UAVs moving from defined starting points to a target location, avoiding unknown obstacles represented as probabilistic risk fields. The UAVs update their plans in real-time as new threats are detected within their observation radius.
 
@@ -36,15 +36,15 @@ You can:
 ## 📁 Project Structure
 
 ```plaintext
-├── main.txt                # Main entry point for simulation
-├── main_UAVs.txt           # Core UAV loop and cooperation logic
-├── initialize.txt          # Environment and variable setup
-├── drawBackground.txt      # Visualization of paths and risk map
-├── planning.txt            # GRL path planning logic
-├── dangerMatrix.txt        # Cost computation based on threat map
-├── Ematrix.txt             # Gaussian threat modeling
-├── enemyGauss.txt          # Threat field generator
-├── nexstep.txt             # Local movement controller
+├── main.m                # Main entry point for simulation
+├── main_UAVs.m           # Core UAV loop and cooperation logic
+├── initialize.m          # Environment and variable setup
+├── drawBackground.m      # Visualization of paths and risk map
+├── planning.m            # GRL path planning logic
+├── dangerMatrix.m        # Cost computation based on threat map
+├── Ematrix.m             # Gaussian threat modeling
+├── enemyGauss.m          # Threat field generator
+├── nexstep.m             # Local movement controller
 ├── DanMirea_RP4.pdf        # Full research paper with background, theory, and results
 ```
 
